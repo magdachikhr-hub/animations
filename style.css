@@ -9,24 +9,29 @@
   width: 200px;
   height: 200px;
   margin: 100px 0 0 150px;
-  animation: box_rotate 3s infinite;
+  animation: box_rotate 4s infinite;
 }
 
 @keyframes box_rotate {
   0% {
     margin: 100px 0 0 150px;
+    rotate: 0deg;
   }
   25% {
     margin: 100px 0 0 500px;
+    rotate: 90deg;
   }
   50% {
     margin: 300px 0 0 500px;
+    rotate: 180deg;
   }
   75% {
     margin: 300px 0 0 150px;
-    background-color: blue;
+    /* background-color: blue; */
+    rotate: 270deg;
   }
   100% {
     margin: 100px 0 0 150px;
+    rotate: 360deg;
   }
 }

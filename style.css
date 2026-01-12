@@ -9,25 +9,24 @@
   width: 200px;
   height: 200px;
   margin: 100px 0 0 150px;
-  animation-name: box_animation;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  /* animation-delay: 3s; */
-  /* animation-direction: reverse; */
-  animation-timing-function: ease;
+  animation: box_rotate 3s infinite;
 }
 
-@keyframes box_animation {
-  from {
-    background-color: yellow;
-    scale: 1.1;
+@keyframes box_rotate {
+  0% {
+    margin: 100px 0 0 150px;
+  }
+  25% {
+    margin: 100px 0 0 500px;
   }
   50% {
-    background-color: green;
-    scale: 1.5;
+    margin: 300px 0 0 500px;
   }
-  to {
-    background-color: red;
-    scale: 1.5;
+  75% {
+    margin: 300px 0 0 150px;
+    background-color: blue;
+  }
+  100% {
+    margin: 100px 0 0 150px;
   }
 }
